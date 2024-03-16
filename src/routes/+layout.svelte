@@ -3,7 +3,9 @@
         <a href="/" class="nav-logo" title="Back to Homepage">Егор Тохтуев</a>
         <div class="nav-links">
             {#each nav as link}
-            <a href={link.href} class="link">{link.title}</a>
+                {#if link.isShow}
+                <a href={link.href} class="link">{link.title}</a>
+                {/if}
             {/each}
         </div>
     </div>
@@ -16,24 +18,29 @@
 <script>
     const nav = [
         {
-            title: 'Студент СГХТ',
-            href: '/about'
+            title: 'Обо мне',
+            href: '/about',
+            isShow: true
         },
         {
-            title: 'Живу в России',
-            href: '/blog'
+            title: 'Блог',
+            href: '/blog',
+            isShow: true
         },
         {
             title: 'Портфолио',
-            href: '/project'
+            href: '/project',
+            isShow: true
         },
         {
             title: 'Незнаю',
-            href: '/contact'
+            href: '/contact',
+            isShow: true
         },
         {
             title: 'temp',
-            href: '/temp'
+            href: '/temp',
+            isShow: false
         }
     ]
 </script>
