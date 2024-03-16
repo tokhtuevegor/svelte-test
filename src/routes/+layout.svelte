@@ -2,10 +2,9 @@
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Егор Тохтуев</a>
         <div class="nav-links">
-            <a href="/about" class="link">Студент СГХТ</a>
-            <a href="/blog" class="link">Живу в России</a>
-            <a href="/projects" class="link">Портфолио</a>
-            <a href="/contact" class="link">Незнаю</a>
+            {#each nav as link}
+            <a href={link.href} class="link">{link.title}</a>
+            {/each}
         </div>
     </div>
 </nav>
@@ -14,7 +13,30 @@
     <!-- Page will be injected below -->
     <slot></slot>
 </div>
-
+<script>
+    const nav = [
+        {
+            title: 'Студент СГХТ',
+            href: '/about'
+        },
+        {
+            title: 'Живу в России',
+            href: '/blog'
+        },
+        {
+            title: 'Портфолио',
+            href: '/project'
+        },
+        {
+            title: 'Незнаю',
+            href: '/contact'
+        },
+        {
+            title: 'temp',
+            href: '/temp'
+        }
+    ]
+</script>
 <style>
     .container {
         max-width: 1400px;
