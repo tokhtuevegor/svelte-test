@@ -33,14 +33,14 @@
             isShow: true
         },
         {
-            title: 'Незнаю',
+            title: 'Контакты',
             href: '/contact',
             isShow: true
         },
         {
             title: 'temp',
             href: '/temp',
-            isShow: false
+            isShow: true
         }
     ]
 </script>

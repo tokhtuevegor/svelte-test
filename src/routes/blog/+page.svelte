@@ -40,7 +40,7 @@
     }
 
     .link {
-        color: rgb(10, 10, 139);
+        color: rgb(0, 0, 158);
     }
 </style>
 
