@@ -4,7 +4,7 @@
 
 <div class="container">
     <h1>Связь со мной</h1>
-    <form action="page">
+    <form action="action_page.php">
   
       <label for="fname">Ваше имя</label>
       <input type="text" id="fname" name="firstname">
@@ -22,7 +22,7 @@
       <label for="subject">Ваши предложения</label>
       <textarea id="subject" name="subject" style="height:100px"></textarea>
   
-      <button class="but">Отправить</button>
+      <a href="./1/2" class="but">Отправить</a>
   
     </form>
   </div>
