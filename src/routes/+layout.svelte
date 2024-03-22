@@ -41,6 +41,11 @@
             title: 'temp',
             href: '/temp',
             isShow: true
+        },
+        {
+            title: 'calc',
+            href: '/calc',
+            isShow: true
         }
     ]
 </script>
